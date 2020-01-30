@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 5rem;
+  color: var(--lightText);
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  color: var(--textNormal);
+}
+
+.button {
+  text-transform: capitalize;
+  display: inline-block;
+  border: 2px solid var(--textLink);
+  color: var(--textLink);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}

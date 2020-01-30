@@ -1,0 +1,43 @@
+.container h1 {
+  color: var(--lighterText);
+}
+
+.container h2 {
+  color: var(--textNormal);
+  font-size: 2.5rem;
+}
+
+.title {
+  margin-top: 1.5rem;
+}
+
+.icon {
+  color: red;
+  font-size: 2rem;
+}
+
+.link {
+  color: var(--textLink);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.link:hover {
+  border-bottom-color: var(--textLink);
+}
+
+@media screen and (max-width: 500px) {
+  .container h2 {
+    font-size: 1.5rem;
+  }
+  .icon {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .container h2 {
+    font-size: 2.2rem;
+  }
+}
