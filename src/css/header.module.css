@@ -34,6 +34,26 @@
   padding: 0.5rem;
 }
 
+.darkMode {
+  color: var(--lightText);
+  cursor: pointer;
+}
+
+.lightMode {
+  color: #fce683;
+  cursor: pointer;
+}
+
+.invisible {
+  opacity: 0;
+  position: absolute;
+}
+
+.darkModeInput {
+  opacity: 0;
+  position: absolute;
+}
+
 @media screen and (max-width: 500px) {
   .header {
     padding: 0;

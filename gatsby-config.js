@@ -23,5 +23,8 @@ module.exports = {
     // For speedy and optimized image
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
+    // Dark mode plugin
+    `gatsby-plugin-dark-mode`,
   ],
 }

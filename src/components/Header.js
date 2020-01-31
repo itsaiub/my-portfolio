@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import { FaSun, FaMoon } from "react-icons/fa"
 
 import links from "../constants/headerLinks"
 import styles from "../css/header.module.css"
@@ -32,6 +34,34 @@ const Header = () => {
             </AniLink>
           </li>
         ))}
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => {
+            const button =
+              theme === "dark" ? (
+                <span>
+                  <FaSun />
+                </span>
+              ) : (
+                <span>
+                  <FaMoon />
+                </span>
+              )
+            return (
+              <label className={styles[`${theme}Mode`]}>
+                <input
+                  type="checkbox"
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? "dark" : "light")
+                  }
+                  checked={theme === "dark"}
+                  className={styles.darkModeInput}
+                />
+                {button}
+                <span className={styles.invisible}>Toggle dark theme</span>
+              </label>
+            )
+          }}
+        </ThemeToggler>
       </ul>
     </header>
   )

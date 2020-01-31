@@ -16,8 +16,6 @@ const Skill = ({ name, file, progress }) => {
     })
     .filter(node => node.name === file)[0]
 
-  console.log(imageNode)
-
   const image = (
     <article className={styles.skill}>
       <div className={styles.details}>
