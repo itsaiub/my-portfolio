@@ -44,7 +44,7 @@ const skillQuery = graphql`
     skills: allFile(
       filter: {
         absolutePath: { regex: "/images/skills/" }
-        extension: { eq: "png" }
+        extension: { eq: "jpg" }
       }
     ) {
       edges {

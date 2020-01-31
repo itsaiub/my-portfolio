@@ -38,11 +38,11 @@ const Header = () => {
           {({ theme, toggleTheme }) => {
             const button =
               theme === "dark" ? (
-                <span>
+                <span title="Day Mode">
                   <FaSun />
                 </span>
               ) : (
-                <span>
+                <span title="Night Mode">
                   <FaMoon />
                 </span>
               )
