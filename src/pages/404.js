@@ -4,11 +4,13 @@ import { FaChevronRight } from "react-icons/fa"
 
 import Layout from "../components/Layout"
 import styles from "../css/notfound.module.css"
+import MetaData from "../components/MetaData"
 
 const NotFound = () => {
   return (
     <Layout>
-      <div className={styles.container}>
+      <MetaData title="Page Not Found" />
+      <section className={styles.container}>
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <p>
@@ -16,7 +18,7 @@ const NotFound = () => {
             Head back to home <FaChevronRight />
           </AniLink>
         </p>
-      </div>
+      </section>
     </Layout>
   )
 }

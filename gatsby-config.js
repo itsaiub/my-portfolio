@@ -26,5 +26,7 @@ module.exports = {
 
     // Dark mode plugin
     `gatsby-plugin-dark-mode`,
+    // Meta Head Tag
+    `gatsby-plugin-react-helmet`,
   ],
 }

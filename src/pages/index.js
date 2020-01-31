@@ -5,10 +5,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
 import styles from "../css/home.module.css"
 import { FaHeart } from "react-icons/fa"
+import MetaData from "../components/MetaData"
 
 export default () => {
   return (
     <Layout>
+      <MetaData title="Home" />
       <div className={styles.container}>
         <h1 className={styles.typing}>
           <Typist avgTypingDelay={120} stdTypingDelay={25}>

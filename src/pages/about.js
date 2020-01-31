@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 import {
   FaHandPeace,
-  FaLaptopCode,
+  // FaLaptopCode,
   FaWrench,
   FaGraduationCap,
   FaLanguage,
@@ -18,10 +18,12 @@ import Layout from "../components/Layout"
 import styles from "../css/about.module.css"
 import LifeEvent from "../components/LifeEvent"
 import Skill from "../components/Skill"
+import MetaData from "../components/MetaData"
 
 const about = ({ data }) => {
   return (
     <Layout>
+      <MetaData title="About" />
       <main className={styles.about}>
         <section className={styles.intro}>
           <div>
@@ -87,31 +89,35 @@ const about = ({ data }) => {
           <h1>
             Education <FaGraduationCap />
           </h1>
-          <div style={{marginLeft: '4rem'}}>
+          <div style={{ marginLeft: "4rem" }}>
+            <LifeEvent
+              timePeriod="February 2019 - Current"
+              title="Self-Learning"
+              details="Node.js, Express, React.js, Gatsby.js etc"
+              location="Dhaka, Bangladesh"
+              current={true}
+            />
 
-          <LifeEvent 
-          timePeriod='February 2019 - Current' title="Self-Learning" 
-          details='Node.js, Express, React.js, Gatsby.js etc' 
-          location='Dhaka, Bangladesh' 
-          current={true} />
+            <LifeEvent
+              timePeriod="February 2016 - Current"
+              title="B.Sc in Computer Science Engineering"
+              details="Daffodil Institute of IT"
+              location="Dhaka, Bangladesh"
+              current={true}
+            />
 
-          <LifeEvent 
-          timePeriod='February 2016 - Current' title="B.Sc in Computer Science Engineering" 
-          details='Daffodil Institute of IT' 
-          location='Dhaka, Bangladesh' 
-          current={true} />
-
-          <LifeEvent 
-          timePeriod='June 2012 - February 2015' title="Higher Secondary School" 
-          details='Al Haj Noor Mia University College' 
-          location='Comilla, Bangladesh' 
-           />
-           <LifeEvent 
-          timePeriod='June 2007 - April 2012' title="Secondary School" 
-          details='Dhorkora High School' 
-          location='Comilla, Bangladesh' 
-           />
-
+            <LifeEvent
+              timePeriod="June 2012 - February 2015"
+              title="Higher Secondary School"
+              details="Al Haj Noor Mia University College"
+              location="Comilla, Bangladesh"
+            />
+            <LifeEvent
+              timePeriod="June 2007 - April 2012"
+              title="Secondary School"
+              details="Dhorkora High School"
+              location="Comilla, Bangladesh"
+            />
           </div>
           <hr className={styles.gradientLine} />
         </section>

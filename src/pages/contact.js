@@ -11,10 +11,12 @@ import {
 
 import Layout from "../components/Layout"
 import styles from "../css/contact.module.css"
+import MetaData from "../components/MetaData"
 
 const ContactPage = () => {
   return (
     <Layout>
+      <MetaData title="Contact" />
       <section>
         <p>
           My preferred way of contact is via&nbsp;
@@ -42,7 +44,7 @@ const ContactPage = () => {
         <div className={styles.icons}>
           <a
             href="https://www.twitter.com/a1ubkh4n"
-            class={styles.iconLink}
+            className={styles.iconLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -51,7 +53,7 @@ const ContactPage = () => {
 
           <a
             href="https://github.com/itsaiub"
-            class={styles.iconLink}
+            className={styles.iconLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -60,7 +62,7 @@ const ContactPage = () => {
 
           <a
             href="https://facebook.com/a1ubkh4n"
-            class={styles.iconLink}
+            className={styles.iconLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +71,7 @@ const ContactPage = () => {
 
           <a
             href="https://www.linkedin.com/in/a1ubkh4n"
-            class={styles.iconLink}
+            className={styles.iconLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +79,7 @@ const ContactPage = () => {
           </a>
           <a
             href="https://www.instagram.com/a1ubkh4n/"
-            class={styles.iconLink}
+            className={styles.iconLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -87,14 +89,16 @@ const ContactPage = () => {
 
         <h1>Additional information</h1>
         <table className={styles.table}>
-          <tr>
-            <td>Phone</td>
-            <td className={styles.monospace}>+880-1521-408723</td>
-          </tr>
-          <tr>
-            <td>Email</td>
-            <td className={styles.monospace}>itsaiub@gmail.com</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Phone</td>
+              <td className={styles.monospace}>+880-1521-408723</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td className={styles.monospace}>itsaiub@gmail.com</td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </Layout>
