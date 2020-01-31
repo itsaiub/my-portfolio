@@ -12,5 +12,16 @@ module.exports = {
   plugins: [
     // Using Transition effect on Page change
     `gatsby-plugin-transition-link`,
+    // For loading files from the file system into GraphQL
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/images/`,
+      },
+    },
+    // For speedy and optimized image
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

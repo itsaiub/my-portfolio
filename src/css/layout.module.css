@@ -13,12 +13,12 @@
 
 @media screen and (min-width: 750px) {
   .container {
-    max-width: 70vw;
+    max-width: 80vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
