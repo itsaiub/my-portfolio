@@ -15,6 +15,7 @@
 .intro {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .intro-text {
@@ -34,6 +35,23 @@
   );
   height: 1px;
   margin: 2rem 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.table {
+  font-size: 1rem;
+    line-height: 1.45rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td:first-child {
+  font-weight: 700
 }
 
 @media screen and (max-width: 750px) {

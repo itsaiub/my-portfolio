@@ -13,7 +13,7 @@ const Header = () => {
   } = useStaticQuery(authorQuery)
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <h1>
         <AniLink fade className={styles.title} to="/">
           {`${author}'s Portfolio`}
@@ -33,7 +33,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </header>
   )
 }
 
